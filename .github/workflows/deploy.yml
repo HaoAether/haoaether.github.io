@@ -44,4 +44,5 @@ jobs:
           publish_dir: ./blog-data/public
           publish_branch: gh-pages
           force_orphan: true
+          force_orphan: true
           commit_message: "🚀 Auto deploy"
