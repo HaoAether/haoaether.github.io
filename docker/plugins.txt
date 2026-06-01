@@ -1,0 +1,27 @@
+# ============================================================
+# plugins.txt — Hexo 插件列表
+# 容器启动时会自动安装此文件中的所有插件
+# 每行一个包名，# 开头为注释行
+# ============================================================
+
+# ── 基础功能插件 ──────────────────────────────────────────────
+hexo-generator-archive       # 归档页面生成
+hexo-generator-category      # 分类页面生成
+hexo-generator-tag           # 标签页面生成
+hexo-generator-index         # 首页生成
+
+# ── 搜索功能 ──────────────────────────────────────────────────
+hexo-generator-search        # 本地搜索索引
+hexo-generator-searchdb      # 搜索数据库
+
+# ── 部署工具 ──────────────────────────────────────────────────
+hexo-deployer-git            # 部署到 Git/GitHub Pages
+
+# ── 内容增强 ──────────────────────────────────────────────────
+hexo-filter-nofollow         # 外链安全处理
+hexo-generator-sitemap       # 网站地图 (SEO)
+hexo-generator-feed          # RSS/Atom 订阅
+
+# ── Markdown 扩展 ─────────────────────────────────────────────
+# hexo-renderer-marked       # Markdown 渲染 (默认已包含)
+# hexo-prism-plugin          # 代码高亮 (可选)
