@@ -43,4 +43,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./blog-data/public
           publish_branch: gh-pages
+          force_orphan: true
           commit_message: "🚀 Auto deploy"
