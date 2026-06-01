@@ -1,7 +1,6 @@
 # 🏗️ 高可用个人知识库
 
-> **Hexo + Docker + GitHub** 全自动化博客部署方案  
-> 知行合一小组 出品
+> **Hexo + Docker + GitHub** 全自动化博客部署方案 
 
 ---
 
