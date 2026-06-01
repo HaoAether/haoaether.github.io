@@ -20,10 +20,6 @@ jobs:
           cache: 'npm'
           cache-dependency-path: blog-data/package-lock.json
 
-      - name: 🔍 Check config
-        working-directory: blog-data
-        run: grep -E "url:|root:" _config.yml
-
       - name: 📦 Install dependencies
         working-directory: blog-data
         run: npm ci
@@ -34,15 +30,11 @@ jobs:
         env:
           TZ: Asia/Shanghai
 
-      - name: 🔍 Check generated HTML
-        run: grep "style.css" blog-data/public/index.html
-
       - name: 🌐 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./blog-data/public
           publish_branch: gh-pages
-          force_orphan: true
           force_orphan: true
           commit_message: "🚀 Auto deploy"
